@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love & Friendship Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1>💕 Friendship Flame</h1>
+                <p>Discover the magic of your connection!</p>
+            </div>
+            
+            <div class="input-section">
+                <div class="input-wrapper">
+                    <i class="ri-user-fill"></i>
+                    <input type="text" id="name1" placeholder="Your Name" required>
+                </div>
+                <div class="input-wrapper">
+                    <i class="ri-user-heart-fill"></i>
+                    <input type="text" id="name2" placeholder="Friend's Name" required>
+                </div>
+                
+                <button onclick="calculateFriendship()" class="pulse-button">
+                    Reveal Connection <i class="ri-heart-pulse-fill"></i>
+                </button>
+            </div>
+            
+            <div class="result-section">
+                <div id="result" class="result">
+                    <h2 id="resultText"></h2>
+                    <div class="result-emoji"></div>
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <button class="info-toggle" onclick="toggleInfo()">
+                    How It Works <i class="ri-information-line"></i>
+                </button>
+                <div class="info-content">
+                    <p>This playful calculator uses a unique algorithm to determine the strength of friendship between two names.</p>
+                    <p>It considers character repetitions, name lengths, and creates a fun percentage!</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Created with ❤️ by <a href="https://github.com/Krish-Venkat-S" target="_blank">Venkat</a></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
